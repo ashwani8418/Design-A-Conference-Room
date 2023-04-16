@@ -20,12 +20,13 @@ public class Building {
         buildingNumber++;
     }
 
-    public void addFloor(int numberOfFloor, int buildingNum){
-        building = space.get(buildingNum - 1);
+    public void addFloor(int numberOfFloor, String buildingNum){
+        int bn = Integer.parseInt(String.valueOf(buildingNum.charAt(1)));
+        building = space.get(bn - 1);
         for(int floor = 0; floor < numberOfFloor; floor++){
             building.add(new ArrayList<ConferenceRoom>());
         }
-        System.out.println("Added floor " + numberOfFloor +" in building b" + buildingNum);
+        System.out.println("Added floor " + numberOfFloor +" in building " + buildingNum);
     }
 
     public void addConferenceRoom(String roomNo, int floorNum, String buildingNum){
