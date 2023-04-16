@@ -18,6 +18,8 @@ public class Main {
         building.addConferenceRoom("c5", 2, "b2" );
         building.addConferenceRoom("c3", 2, "b1" );
         building.addConferenceRoom("c3", 2, "b1" );
+        building.addConferenceRoom("c1", 2, "b1");
+        building.addConferenceRoom("c4", 2, "b1");
         building.listAllConferenceRoom();
         building.bookConferenceRoom(1,5, "b1",2 , "c3");
         building.bookConferenceRoom(7,10, "b1",2 , "c3");
